@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="controls">
+      <button (click)="generateArray()">Generate New Array</button>
+      <button (click)="bubbleSort()">Bubble Sort</button>
+      <button (click)="selectionSort()">Selection Sort</button>
+      <button (click)="insertionSort()">Insertion Sort</button>
+      <button (click)="mergeSort()">Merge Sort</button>
+      <button (click)="quickSort()">Quick Sort</button>
+    </div>
+  
+    <div class="array-container">
+      <div
+        *ngFor="let value of array"
+        class="array-bar"
+        [style.height.px]="value">
+      </div>
+    </div>
+  </div>
+  
